@@ -1,7 +1,7 @@
 package cibertec.edu.pe.DSWII_T3_QuerevaluCherreMariaIsabel.controller;
 
 import cibertec.edu.pe.DSWII_T3_QuerevaluCherreMariaIsabel.model.bd.Usuario;
-import cibertec.edu.pe.DSWII_T3_QuerevaluCherreMariaIsabel.model.dto.UsuarioSeguDto;
+import cibertec.edu.pe.DSWII_T3_QuerevaluCherreMariaIsabel.model.dto.UsuarioSeguridadDto;
 import cibertec.edu.pe.DSWII_T3_QuerevaluCherreMariaIsabel.service.DetalleUsuarioService;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -32,7 +32,7 @@ public class AuthController {
 
     @GetMapping("/login")
     @Transactional(readOnly = true)
-    public ResponseEntity<UsuarioSeguDto> autenticarUsuario(
+    public ResponseEntity<UsuarioSeguridadDto> autenticarUsuario(
             @RequestParam("usuario") String usuario,
             @RequestParam("password") String password
     ) throws  Exception{
@@ -45,8 +45,8 @@ public class AuthController {
                 Usuario objUsuario = detalleUsuarioService
                         .obtenerUsuarioXNomusuario(usuario);
                 String token = generarToken(objUsuario);
-                UsuarioSeguDto usuarioSeguridadDto =
-                        new UsuarioSeguDto(objUsuario.getIdusuario(),
+                UsuarioSeguridadDto usuarioSeguridadDto =
+                        new UsuarioSeguridadDto(objUsuario.getIdusuario(),
                                 usuario, token);
                 return new ResponseEntity<>(usuarioSeguridadDto, HttpStatus.OK);
             }else {

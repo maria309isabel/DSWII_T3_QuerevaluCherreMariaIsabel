@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class UsuarioSeguDto {
+public class UsuarioSeguridadDto {
     private Integer idusuario;
     private String nomusuario;
     private String token;

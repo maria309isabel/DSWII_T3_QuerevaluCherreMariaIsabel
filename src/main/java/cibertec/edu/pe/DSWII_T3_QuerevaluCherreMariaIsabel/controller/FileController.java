@@ -14,7 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-@PreAuthorize("hasRole('administrador')")
+@PreAuthorize("hasRole('ADMINISTRADOR')")
 @AllArgsConstructor
 @RestController
 @RequestMapping(path = "api/v1/files")

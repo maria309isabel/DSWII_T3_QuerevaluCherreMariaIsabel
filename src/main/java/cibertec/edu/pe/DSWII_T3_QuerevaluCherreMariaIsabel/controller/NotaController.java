@@ -4,19 +4,19 @@ import cibertec.edu.pe.DSWII_T3_QuerevaluCherreMariaIsabel.model.dto.DtoEntity;
 import cibertec.edu.pe.DSWII_T3_QuerevaluCherreMariaIsabel.model.dto.NotasDto;
 import cibertec.edu.pe.DSWII_T3_QuerevaluCherreMariaIsabel.service.INotasService;
 import cibertec.edu.pe.DSWII_T3_QuerevaluCherreMariaIsabel.util.DtoUtil;
-import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import lombok.AllArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@PreAuthorize("hasRole('supervisor')")
+@PreAuthorize("hasRole('SUPERVISOR')")
 @AllArgsConstructor
 @RestController
 @RequestMapping(path = "api/v1/notas")

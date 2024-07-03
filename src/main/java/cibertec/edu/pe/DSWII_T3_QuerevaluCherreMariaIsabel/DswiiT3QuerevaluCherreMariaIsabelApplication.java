@@ -17,7 +17,7 @@ public class DswiiT3QuerevaluCherreMariaIsabelApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**")
+				registry.addMapping("api/v1/**")
 						.allowedOrigins("https://www.cibertec.edu.pe")
 						.allowedMethods("GET", "POST", "PUT")
 						.allowedHeaders("*")
