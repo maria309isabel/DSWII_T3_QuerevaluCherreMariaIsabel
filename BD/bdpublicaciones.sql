@@ -69,10 +69,10 @@ FOREIGN KEY (IdAlumno) REFERENCES Alumno(IdAlumno)
 );
 
 -- Agregar Datos a la Tabla usuarios
--- ==============================
-INSERT INTO usuario VALUES (1,'supervisor', 'supervisor@example.com', '$2a$12$WmxR0m4Hq3m2u/d9x5gxh.H9cX/iLalxcZtBcYQkE0yj9GkeJfUia', 'Juan', 'Perez', TRUE);
-INSERT INTO usuario VALUES (2,'administrador', 'administrador1@example.com', '$2a$12$ezSb1W43lh/DOu7PooJlvezXfkxknQpNFFHHQayJXlPChIhyLudUW', 'Maria', 'Gomez', TRUE);
-INSERT INTO usuario VALUES (3,'administrador', 'administrador2@example.com', '$2a$12$iIePTu8ROcpEPy3IWCAqcu5BQHIjgVtC3XiyA9aKOzZLD7s2WEUwy', 'Carlos', 'Lopez', FALSE);
+-- ============================== contraseña EFMARIA
+INSERT INTO usuario VALUES (1,'supervisor', 'supervisor@example.com', '$2a$12$6AOY4T1xXjHDghg4AHaxo.fy4Qd/FdxlvrpAd40rC1quQWOdkdJ86', 'Juan', 'Perez', TRUE);
+INSERT INTO usuario VALUES (2,'administrador', 'administrador1@example.com', '$2a$12$6AOY4T1xXjHDghg4AHaxo.fy4Qd/FdxlvrpAd40rC1quQWOdkdJ86', 'Maria', 'Gomez', TRUE);
+INSERT INTO usuario VALUES (3,'administrador', 'administrador2@example.com', '$2a$12$6AOY4T1xXjHDghg4AHaxo.fy4Qd/FdxlvrpAd40rC1quQWOdkdJ86', 'Carlos', 'Lopez', FALSE);
 
 -- Agregar Datos a la Tabla rol
 -- ==============================
