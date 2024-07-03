@@ -80,7 +80,7 @@ Insert Into rol  Values(2,'SUPERVISOR');
 -- ==============================
 INSERT INTO usuario_rol VALUES (1, 2);
 INSERT INTO usuario_rol VALUES (2, 1);
-INSERT INTO usuario_rol VALUES (3, 2); 
+INSERT INTO usuario_rol VALUES (3, 2);
 
 
 -- Agregar Datos a la Tabla Especialidad
