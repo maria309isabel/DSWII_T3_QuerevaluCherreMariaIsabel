@@ -66,6 +66,23 @@ ExaFinal REAL NULL,
 PRIMARY KEY(IdAlumno,IdCurso)
 );
 
+-- Agregar Datos a la Tabla usuarios
+-- ==============================
+INSERT INTO usuario VALUES (1,'supervisor', 'supervisor@example.com', '$2a$12$WmxR0m4Hq3m2u/d9x5gxh.H9cX/iLalxcZtBcYQkE0yj9GkeJfUia', 'Juan', 'Perez', TRUE);
+INSERT INTO usuario VALUES (2,'administrador', 'administrador1@example.com', '$2a$12$ezSb1W43lh/DOu7PooJlvezXfkxknQpNFFHHQayJXlPChIhyLudUW', 'Maria', 'Gomez', TRUE);
+INSERT INTO usuario VALUES (3,'administrador', 'administrador2@example.com', '$2a$12$iIePTu8ROcpEPy3IWCAqcu5BQHIjgVtC3XiyA9aKOzZLD7s2WEUwy', 'Carlos', 'Lopez', FALSE);
+
+-- Agregar Datos a la Tabla rol
+-- ==============================
+Insert Into rol  Values(1,'ADMIN');
+Insert Into rol  Values(2,'SUPERVISOR');
+-- Agregar Datos a la Tabla
+-- ==============================
+INSERT INTO usuario_rol VALUES (1, 2);
+INSERT INTO usuario_rol VALUES (2, 1);
+INSERT INTO usuario_rol VALUES (3, 2); 
+
+
 -- Agregar Datos a la Tabla Especialidad
 -- ==============================
 Insert Into Especialidad Values('E01','Educacion Informatica',2500);
