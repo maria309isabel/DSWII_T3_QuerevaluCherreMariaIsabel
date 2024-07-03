@@ -56,6 +56,7 @@ Ncuota INT NOT NULL,
 Monto NUMERIC(12,2) NOT NULL,
 Fecha DATETIME,
 PRIMARY KEY(IdAlumno, Ciclo, Ncuota)
+FOREIGN KEY (IdAlumno) REFERENCES Alumno(IdAlumno)
 );
 
 CREATE TABLE Notas (
@@ -64,6 +65,7 @@ IdCurso CHAR(4) NOT NULL,
 ExaParcial REAL NULL,
 ExaFinal REAL NULL,
 PRIMARY KEY(IdAlumno,IdCurso)
+FOREIGN KEY (IdAlumno) REFERENCES Alumno(IdAlumno)
 );
 
 -- Agregar Datos a la Tabla usuarios
