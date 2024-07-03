@@ -19,7 +19,7 @@ public class DswiiT3QuerevaluCherreMariaIsabelApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
 						.allowedOrigins("https://www.cibertec.edu.pe")
-						.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+						.allowedMethods("GET", "POST", "PUT")
 						.allowedHeaders("*")
 						.allowCredentials(true);
 			}
